@@ -19,16 +19,16 @@ This project is a Movie Recommendation System that uses a content-based filterin
 1. **Data Preprocessing:**
 
 -The raw dataset is loaded, and key features such as Movie_Genre, Movie_Keywords, Movie_Tagline, Movie_Cast, and Movie_Director are selected.
--Missing values in these features are handled by replacing them with an empty string.
+-Missing values in these features are handled by replacing them with an empty string. <br>
 2. **Feature Engineering:**
 
--The selected features are combined into a single string for each movie to create a comprehensive textual representation of the movie's content.
+-The selected features are combined into a single string for each movie to create a comprehensive textual representation of the movie's content.<br>
 3. **Text Vectorization:**
 
--The combined textual data is converted into numerical form using the TF-IDF Vectorizer, which measures the importance of each word relative to the entire dataset. This ensures that common words have lower weights, while unique words have higher weights.
+-The combined textual data is converted into numerical form using the TF-IDF Vectorizer, which measures the importance of each word relative to the entire dataset. This ensures that common words have lower weights, while unique words have higher weights.   <br>
 4. **Similarity Calculation:**
 
--The Cosine Similarity technique is used to calculate the similarity between movies based on their vectorized representations. This method provides a score between 0 and 1, where a higher score indicates greater similarity.
+-The Cosine Similarity technique is used to calculate the similarity between movies based on their vectorized representations. This method provides a score between 0 and 1, where a higher score indicates greater similarity.  <br>
 5. **Recommendation Generation:**
 
--When a user provides a movie title, the system identifies similar movies by ranking them based on their cosine similarity scores. The top results are then recommended to the user.
+-When a user provides a movie title, the system identifies similar movies by ranking them based on their cosine similarity scores. The top results are then recommended to the user.  <br>
